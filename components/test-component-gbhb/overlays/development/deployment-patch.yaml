@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-gbhb
+  namespace: build-e2e-umgb-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:5ac287da9bfbbdf16ab3c607bb60b85993951c979343366c9a4f322825a9a488
+        name: my-python
+        resources: {}
+status: {}
